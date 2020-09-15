@@ -6,6 +6,7 @@
 ### Docs & Guides
 > Master these, master life.
 
+- [Build Guide](https://github.com/Cache-core/Cache/wiki/%5BBuild%5D-Cache-Desktop-Wallet)
 - [Project Ideas](https://github.com/cache-core/project-documents/blob/master/project-idea.md)
 
 `*todo*`
