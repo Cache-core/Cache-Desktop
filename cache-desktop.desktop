@@ -1,0 +1,19 @@
+# This file is an example of how to add Cache Desktop in Applications list.
+# Edit this file and copy it to ~/.local/share/applications
+# Once copied you will be able to find Cache Desktop in Applications list.
+# If you are not able to find Cache Desktop check that Exec and Icon are correct.
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Cache Desktop
+Comment=Cache Desktop
+# Change the Exec value to match Cache-Desktop path
+# example : Exec=/home/cache/apps/cache/Cache-Desktop
+Exec=<change-this-value>
+Terminal=false
+Type=Application
+# Change the Icon value to match cache icon path
+# example : Icon=/home/cache/apps/cache/icon/cache.png
+Icon=icon/cache.png
+MimeType=x-scheme-handler/cache-wallet;
+Categories=Office;Finance;Cryptocurrency;Banking;

@@ -1,0 +1,41 @@
+version: 1.0.{build}
+
+image: Visual Studio 2017
+
+environment:
+ matrix:
+    - PLATFORM: x64
+      configuration: Release
+      BUILDER: CMake
+      GENERATOR: "Visual Studio 15 2017 Win64"
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      BOOST_ROOT: C:\Libraries\boost_1_69_0
+      BOOST_LIBRARYDIR: C:\Libraries\boost_1_69_0\lib64-msvc-14.1
+      QTDIR: C:\Qt\5.13.2\msvc2017_64
+      PATH: '%PATH%;%QTDIR%\bin;%BOOST_ROOT%;%BOOST_LIBRARYDIR%'
+
+build_script:
+   - git clone https://github.com/cache-core/Cache.git cryptonote
+   - git clone https://github.com/fukuchi/libqrencode.git
+   - md build && cd build
+   - ps: 'Write-Host "Running $env:BUILDER with $env:GENERATOR" $env:PLATFORM -ForegroundColor Magenta'
+   - if "%BUILDER%"=="CMake" cmake -G "%GENERATOR%" -DCMAKE_BUILD_TYPE=%CONFIGURATION% ..
+   - MSBuild Cache-Desktop.sln /m
+
+after_build: 
+  - if not defined APPVEYOR_BUILD_NUMBER (set APPVEYOR_BUILD_NUMBER=%APPVEYOR_BUILD_ID%)
+  - cd Release
+  - mkdir Cache-Desktop-%APPVEYOR_BUILD_NUMBER%
+  - windeployqt --release Cache-Desktop.exe --dir "Cache-Desktop-%APPVEYOR_BUILD_NUMBER" --no-translations --no-opengl-sw
+  - makensis ..\..\CacheWallet.nsi
+  - ls
+  - ls ..\
+  - ls ..\..\
+  - copy Cache-Setup.exe Cache-Desktop-%APPVEYOR_BUILD_NUMBER%
+  - copy ..\..\LICENSE.md Cache-Desktop-%APPVEYOR_BUILD_NUMBER%
+  - 7z a Cache-Desktop-%APPVEYOR_BUILD_NUMBER%-windows.zip Cache-Desktop-%APPVEYOR_BUILD_NUMBER%
+  - copy Cache-Desktop-%APPVEYOR_BUILD_NUMBER%-windows.zip ..\..\
+
+artifacts:
+  - path: Cache-Desktop-$(APPVEYOR_BUILD_NUMBER)-windows.zip
+    name: Cache-Desktop
