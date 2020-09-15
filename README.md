@@ -15,7 +15,7 @@
 
 | Build | Status | Download |
 |-------|--------|----------|
-| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/gusvs4l2vd7lgth2/branch/master?svg=true)](https://ci.appveyor.com/project/En4orcer/cache/branch/master) | [![Win x64](https://img.shields.io/badge/Win%20x64-Download-blue)](https://ci.appveyor.com/project/En4orcer/project/build/artifacts) |
+| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/gusvs4l2vd7lgth2/branch/master?svg=true)](https://ci.appveyor.com/project/En4orcer/cache-desktop/branch/master) | [![Win x64](https://img.shields.io/badge/Win%20x64-Download-blue)](https://ci.appveyor.com/project/En4orcer/project/build/artifacts) |
 
 ***
 
