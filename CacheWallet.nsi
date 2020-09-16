@@ -50,12 +50,12 @@ InstallDir "$PROGRAMFILES\Cache Wallet"
 !define MUI_ICON "src\images\appicon\cache.ico"
 !define MUI_UNICON "src\images\appicon\cache.ico"
 
-!define MUI_WELCOMEFINISHPAGE_BITMAP "src\images\installer\conceal-welcome.bmp"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "src\images\installer\conceal-welcome.bmp"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "src\images\installer\cache-welcome.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "src\images\installer\cache-welcome.bmp"
 
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "src\images\installer\conceal-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "src\images\installer\cache-header.bmp"
 
 !insertmacro MUI_PAGE_WELCOME
 
