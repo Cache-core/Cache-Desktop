@@ -47,8 +47,7 @@ SplashScreen::SplashScreen(QWidget* parent) : QWidget(parent)
 
 void SplashScreen::centerOnScreen(QApplication* app)
 {
-  setGeometry(QStyle::alignedRect(
-      Qt::LeftToRight, Qt::AlignCenter, size(), app->desktop()->availableGeometry()));
+  QGuiApplication::screens();
 }
 
 void SplashScreen::showMessage(const QString& message, Qt::Alignment alignment, const QColor& color)
