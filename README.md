@@ -1,6 +1,6 @@
 ## Cache Desktop Wallet
 
-![version](https://img.shields.io/badge/Version-0.0.2-blue)
+![version](https://img.shields.io/badge/Version-1.0.0-blue)
 
 ***
 ### Docs & Guides
