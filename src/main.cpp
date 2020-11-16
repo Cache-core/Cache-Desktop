@@ -134,8 +134,8 @@ int main(int argc, char* argv[])
   splashScreen->deleteLater();
   splashScreen = nullptr;
 
-  Updater* d = new Updater();
-  d->checkForUpdate();
+  //Updater* d = new Updater();
+  //d->checkForUpdate();
   MainWindow::instance().show();
 
   WalletAdapter::instance().open("");

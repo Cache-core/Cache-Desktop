@@ -24,7 +24,7 @@ public:
         delete manager;
     }
 
-    void checkForUpdate();
+    //void checkForUpdate();
 
 signals:
     

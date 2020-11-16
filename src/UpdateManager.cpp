@@ -68,14 +68,14 @@ std::istream& operator>>(std::istream& str, Version::VersionDigit& digit)
   return str;
 }
 
-void Updater::checkForUpdate()
+/* void Updater::checkForUpdate()
 {
   QNetworkAccessManager* nam = new QNetworkAccessManager(this);
   connect(nam, &QNetworkAccessManager::finished, this, &Updater::replyFinished);
   const QUrl url = QUrl::fromUserInput("https://raw.githubusercontent.com/Cache-core/Assets/master/version.txt"); // todo
   QNetworkRequest request(url);
   nam->get(request);
-}
+} */
 
 void Updater::replyFinished(QNetworkReply* reply)
 {
