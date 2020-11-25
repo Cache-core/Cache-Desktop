@@ -245,7 +245,7 @@ p, li { white-space: pre-wrap; }
     <target>存款到期时赚取的利息：</target>
 </phrase>
 <phrase>
-    <source>0.001000</source>
+    <source>0.00100</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1189,7 +1189,7 @@ p, li { white-space: pre-wrap; }
     <target>标签</target>
 </phrase>
 <phrase>
-    <source>0.000000</source>
+    <source>0.00000</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1229,8 +1229,8 @@ p, li { white-space: pre-wrap; }
     <target>加密消息（可选）</target>
 </phrase>
 <phrase>
-    <source>You can send an optional message along with your transfer. There is a 0.000010 CXCHE fee per character.</source>
-    <target>您可以在传输时发送可选消息。每字符收费0.000010 cxche。</target>
+    <source>You can send an optional message along with your transfer. There is a 0.00010 CXCHE fee per character.</source>
+    <target>您可以在传输时发送可选消息。每字符收费0.00010 cxche。</target>
 </phrase>
 <phrase>
     <source>Some exchanges and other services require that a Payment ID is included when sending funds.</source>

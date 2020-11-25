@@ -75,7 +75,7 @@ namespace WalletGui
   Q_DECL_CONSTEXPR quint64 MESSAGE_AMOUNT = 100;
   Q_DECL_CONSTEXPR quint64 MESSAGE_CHAR_PRICE = 10;
   Q_DECL_CONSTEXPR quint64 MINIMAL_MESSAGE_FEE = 10;
-  Q_DECL_CONSTEXPR int DEFAULT_MESSAGE_MIXIN = 4;
+  Q_DECL_CONSTEXPR int DEFAULT_MESSAGE_MIXIN = 0;
   Q_DECL_CONSTEXPR quint32 MINUTE_SECONDS = 60;
   Q_DECL_CONSTEXPR quint32 HOUR_SECONDS = 60 * MINUTE_SECONDS;
   Q_DECL_CONSTEXPR int MIN_TTL = 5 * MINUTE_SECONDS;
@@ -1032,7 +1032,7 @@ namespace WalletGui
     m_ui->m_addressEdit->clear();
     m_ui->m_addressLabel->clear();
     m_ui->m_messageEdit->clear();
-    m_ui->m_amountEdit->setText("0.000000");
+    m_ui->m_amountEdit->setText("0.00000");
   }
 
   /* Set the amount to 25% of available funds */
@@ -1937,8 +1937,8 @@ namespace WalletGui
   }
 
   void OverviewFrame::telegramClicked()
-  { // todo
-    QDesktopServices::openUrl(QUrl("", QUrl::TolerantMode));
+  {
+    QDesktopServices::openUrl(QUrl("https://t.me/cxche", QUrl::TolerantMode));
   }
 
   void OverviewFrame::githubClicked()
@@ -1947,38 +1947,13 @@ namespace WalletGui
   }
 
   void OverviewFrame::redditClicked()
-  { // todo
-    QDesktopServices::openUrl(QUrl("", QUrl::TolerantMode));
-  }
-
-  void OverviewFrame::mediumClicked()
-  { // todo
-    QDesktopServices::openUrl(QUrl("", QUrl::TolerantMode));
-  }
-
-  void OverviewFrame::hotbitClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://www.hotbit.io/exchange?symbol=CCX_BTC", QUrl::TolerantMode));
-  }
-
-  void OverviewFrame::stexClicked()
-  {
-    QDesktopServices::openUrl(QUrl("https://app.stex.com/en/basic-trade/pair/BTC/CXCHE", QUrl::TolerantMode));
-  }
-
-  void OverviewFrame::tradeogreClicked()
-  {
-    QDesktopServices::openUrl(QUrl("https://tradeogre.com/exchange/BTC-CXCHE", QUrl::TolerantMode));
-  }
-
-  void OverviewFrame::qtradeClicked()
-  {
-    QDesktopServices::openUrl(QUrl("https://qtrade.io/market/CCX_BTC", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://reddit.com/r/cxche", QUrl::TolerantMode));
   }
 
   void OverviewFrame::helpClicked()
   {
-    QDesktopServices::openUrl(QUrl("https://github.com/Cache-core/Cache/wiki", QUrl::TolerantMode));
+    QDesktopServices::openUrl(QUrl("https://github.com/Cache-core/Guides", QUrl::TolerantMode));
   }
 
   /* Initiate a password prompt meant for critical tasks like sending funds etc */

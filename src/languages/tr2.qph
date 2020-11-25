@@ -755,7 +755,7 @@ p, li { white-space: pre-wrap; }
     <target>Lütfen göndermeden önce Adres ve Ödeme Kimliğinin (varsa) doğru olduğundan emin olun. Yanlış adrese gönderilen fonlar kaybedilecektir.</target>
 </phrase>
 <phrase>
-    <source>0.000000</source>
+    <source>0.00000</source>
     <target></target>
 </phrase>
 <phrase>
@@ -847,7 +847,7 @@ p, li { white-space: pre-wrap; }
     <target>Uzunluk:</target>
 </phrase>
 <phrase>
-    <source>0.001000 CXCHE</source>
+    <source>0.00100 CXCHE</source>
     <target></target>
 </phrase>
 <phrase>
