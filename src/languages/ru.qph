@@ -245,7 +245,7 @@ p, li { white-space: pre-wrap; }
     <target>Процентные начисления, которые вы получите по завершению вашего депозита:</target>
 </phrase>
 <phrase>
-    <source>0.001000</source>
+    <source>0.00100</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1188,7 +1188,7 @@ p, li { white-space: pre-wrap; }
     <target>ЯРЛЫК</target>
 </phrase>
 <phrase>
-    <source>0.000000</source>
+    <source>0.00000</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1232,8 +1232,8 @@ p, li { white-space: pre-wrap; }
     <target>СООБЩЕНИЕ (ПО ВЫБОРУ)</target>
 </phrase>
 <phrase>
-    <source>You can send an optional message along with your transfer. There is a 0.000010 CXCHE fee per character.</source>
-    <target>Вы можете отослать дополнительное сообщение вместе с вашим переводом. За каждый символ сообщения выплачивается комиссия в 0.000010 CXCHE.</target>
+    <source>You can send an optional message along with your transfer. There is a 0.00010 CXCHE fee per character.</source>
+    <target>Вы можете отослать дополнительное сообщение вместе с вашим переводом. За каждый символ сообщения выплачивается комиссия в 0.00010 CXCHE.</target>
 </phrase>
 <phrase>
     <source>Some exchanges and other services require that a Payment ID is included when sending funds.</source>

@@ -1032,7 +1032,7 @@ namespace WalletGui
     m_ui->m_addressEdit->clear();
     m_ui->m_addressLabel->clear();
     m_ui->m_messageEdit->clear();
-    m_ui->m_amountEdit->setText("0.000000");
+    m_ui->m_amountEdit->setText("0.00000");
   }
 
   /* Set the amount to 25% of available funds */

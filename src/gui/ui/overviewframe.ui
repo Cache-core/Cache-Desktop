@@ -994,7 +994,7 @@ padding-left: 5px</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Fee: 0.001000 CXCHE</string>
+            <string notr="true">Fee: 0.00100 CXCHE</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1200,7 +1200,7 @@ padding-left: 5px</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Available Balance: 0.000000 CXCHE</string>
+            <string notr="true">Available Balance: 0.00000 CXCHE</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1230,7 +1230,7 @@ border: none;</string>
             <string notr="true">padding: 3px; border: 1px solid #444; border-radius: 5px;   color: #aaa;</string>
            </property>
            <property name="text">
-            <string>0.000000</string>
+            <string>0.00000</string>
            </property>
           </widget>
          </item>
@@ -2028,7 +2028,7 @@ padding-left: 5px</string>
 border: none;</string>
            </property>
            <property name="text">
-            <string notr="true">Fee: 0.001000 CXCHE</string>
+            <string notr="true">Fee: 0.00100 CXCHE</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2990,7 +2990,7 @@ border: none;
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.00000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3037,7 +3037,7 @@ border: none;
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.00000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3135,7 +3135,7 @@ border: none;
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.00000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -3183,7 +3183,7 @@ border: none;
             border: none;</string>
                  </property>
                  <property name="text">
-                  <string notr="true">0.000000</string>
+                  <string notr="true">0.00000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

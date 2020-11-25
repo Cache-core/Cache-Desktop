@@ -245,7 +245,7 @@ p, li { white-space: pre-wrap; }
     <target>Mevduatın sonunda kazanılacak faiz:</target>
 </phrase>
 <phrase>
-    <source>0.001000</source>
+    <source>0.00100</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1188,7 +1188,7 @@ p, li { white-space: pre-wrap; }
     <target>ETİKET</target>
 </phrase>
 <phrase>
-    <source>0.000000</source>
+    <source>0.00000</source>
     <target></target>
 </phrase>
 <phrase>
@@ -1228,8 +1228,8 @@ p, li { white-space: pre-wrap; }
     <target>KRİPTO MESAJ (İSTEĞE BAĞLI)</target>
 </phrase>
 <phrase>
-    <source>You can send an optional message along with your transfer. There is a 0.000010 CXCHE fee per character.</source>
-    <target>Transferinizle birlikte isteğe bağlı bir mesaj gönderebilirsiniz. Karakter başına 0.000010 CXCHE ücret kesilir.</target>
+    <source>You can send an optional message along with your transfer. There is a 0.00010 CXCHE fee per character.</source>
+    <target>Transferinizle birlikte isteğe bağlı bir mesaj gönderebilirsiniz. Karakter başına 0.00010 CXCHE ücret kesilir.</target>
 </phrase>
 <phrase>
     <source>Some exchanges and other services require that a Payment ID is included when sending funds.</source>

@@ -927,7 +927,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../gui/ui/overviewframe.ui" line="1236"/>
-        <source>0.000000</source>
+        <source>0.00000</source>
         <translation></translation>
     </message>
     <message>
@@ -1043,7 +1043,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../gui/ui/overviewframe.ui" line="4875"/>
-        <source>0.001000 CXCHE</source>
+        <source>0.00100 CXCHE</source>
         <translation></translation>
     </message>
     <message>

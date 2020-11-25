@@ -630,7 +630,7 @@ Please wait...</source>
     </message>
     <message>
         <location filename="../gui/ui/overviewframe.ui" line="1236"/>
-        <source>0.000000</source>
+        <source>0.00000</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -848,7 +848,7 @@ Please wait...</source>
     </message>
     <message>
         <location filename="../gui/ui/overviewframe.ui" line="4875"/>
-        <source>0.001000 CXCHE</source>
+        <source>0.00100 CXCHE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
