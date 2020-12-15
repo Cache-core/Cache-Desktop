@@ -5,7 +5,6 @@ image: Visual Studio 2017
 environment:
  matrix:
     - PLATFORM: x64
-      configuration: Release
       BUILDER: CMake
       GENERATOR: "Visual Studio 15 2017 Win64"
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
@@ -19,7 +18,7 @@ build_script:
    - git clone https://github.com/fukuchi/libqrencode.git
    - md build && cd build
    - ps: 'Write-Host "Running $env:BUILDER with $env:GENERATOR" $env:PLATFORM -ForegroundColor Magenta'
-   - if "%BUILDER%"=="CMake" cmake -G "%GENERATOR%" -DCMAKE_BUILD_TYPE=%CONFIGURATION% ..
+   - if "%BUILDER%"=="CMake" cmake -G ..
    - MSBuild Cache-Desktop.sln /m
 
 after_build: 
