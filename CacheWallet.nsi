@@ -7,7 +7,7 @@
 !define APP_NAME "Cache Wallet"
 !define COMP_NAME "Cache Core"
 !define WEB_SITE "https://github.com/cache-core"
-!define VERSION "01.00.02.00"
+!define VERSION "01.00.05.00"
 !define COPYRIGHT "Cache 2020"
 !define DESCRIPTION "Cache Wallet"
 !define MAIN_APP_EXE "Cache-Desktop.exe"
