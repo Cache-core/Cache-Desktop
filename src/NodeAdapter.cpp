@@ -16,7 +16,6 @@
 #include <QNetworkReply>
 #include <QStringList>
 #include <CryptoNoteCore/CoreConfig.h>
-#include <Logging/LoggerRef.h>
 #include <P2p/NetNodeConfig.h>
 #include <Wallet/WalletErrors.h>
 #include "CurrencyAdapter.h"
@@ -105,7 +104,7 @@ NodeAdapter &NodeAdapter::instance()
   return inst;
 }
 
-NodeAdapter::NodeAdapter() : QObject(), m_node(nullptr), m_nodeInitializerThread(), m_nodeInitializer(new InProcessNodeInitializer), m_walletLogger(m_walletLogger)
+NodeAdapter::NodeAdapter() : QObject(), m_node(nullptr), m_nodeInitializerThread(), m_nodeInitializer(new InProcessNodeInitializer)
 {
   m_nodeInitializer->moveToThread(&m_nodeInitializerThread);
 
@@ -172,7 +171,7 @@ bool NodeAdapter::init()
   if (connection.compare("embedded") == 0 || Settings::instance().getCurrentRemoteNode() == "")
   {
     QUrl localNodeUrl = QUrl::fromUserInput(QString("127.0.0.1:%1").arg(CryptoNote::RPC_DEFAULT_PORT));
-    m_node = createRpcNode(CurrencyAdapter::instance().getCurrency(), LoggerAdapter::instance().getLoggerManager(), *this, localNodeUrl.host().toStdString(), localNodeUrl.port(), m_walletLogger);
+    m_node = createRpcNode(CurrencyAdapter::instance().getCurrency(), LoggerAdapter::instance().getLoggerManager(), *this, localNodeUrl.host().toStdString(), localNodeUrl.port());
 
     QTimer initTimer;
     initTimer.setInterval(3000);
@@ -221,7 +220,7 @@ bool NodeAdapter::init()
                            LoggerAdapter::instance().getLoggerManager(),
                            *this,
                            remoteNodeUrl.host().toStdString(),
-                           remoteNodeUrl.port(), m_walletLogger);
+                           remoteNodeUrl.port());
     QTimer initTimer;
     initTimer.setInterval(3000);
     initTimer.setSingleShot(true);

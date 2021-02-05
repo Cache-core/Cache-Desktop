@@ -23,7 +23,6 @@ class Currency;
 
 namespace Logging {
   class LoggerManager;
-  class ILogger;
 }
 
 namespace WalletGui {
@@ -53,7 +52,6 @@ public:
 
 private:
   Node* m_node;
-  Logging::ILogger& m_walletLogger;
   QThread m_nodeInitializerThread;
   InProcessNodeInitializer* m_nodeInitializer;
   void downloadFinished(QNetworkReply *reply);
