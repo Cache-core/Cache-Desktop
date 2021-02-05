@@ -21,6 +21,7 @@
 #include "P2p/NetNode.h"
 #include "WalletLegacy/WalletLegacy.h"
 #include "Logging/LoggerManager.h"
+#include "Logging/LoggerRef.h"
 #include "System/Dispatcher.h"
 
 namespace WalletGui {
@@ -88,11 +89,12 @@ Node::~Node() {
 
 class RpcNode : CryptoNote::INodeObserver, public Node {
 public:
-  RpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort) :
+  RpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort, Logging::ILogger& logger) :
     m_callback(callback),
     m_currency(currency),
     m_logger(logManager),
-    m_node(nodeHost, nodePort) {
+    log(logger),
+    m_node(nodeHost, nodePort, logger) {
     m_node.addObserver(this);
   }
 
@@ -140,6 +142,7 @@ private:
   const CryptoNote::Currency& m_currency;
   CryptoNote::NodeRpcProxy m_node;
   Logging::LoggerManager& m_logger;
+  Logging::ILogger& log;
 
   void peerCountUpdated(size_t count) {
     m_callback.peerCountUpdated(*this, count);
@@ -267,8 +270,8 @@ private:
   }
 };
 
-Node* createRpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort) {
-  return new RpcNode(currency, logManager, callback, nodeHost, nodePort);
+Node* createRpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort, Logging::ILogger& logger) {
+  return new RpcNode(currency, logManager, callback, nodeHost, nodePort, logger);
 }
 
 Node* createInprocessNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager,

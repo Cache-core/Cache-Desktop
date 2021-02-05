@@ -25,6 +25,7 @@ class NetNodeConfig;
 
 namespace Logging {
   class LoggerManager;
+  class ILogger;
 }
 
 namespace WalletGui {
@@ -52,7 +53,7 @@ public:
   virtual void lastKnownBlockHeightUpdated(Node& node, uint64_t height) = 0;
 };
 
-Node* createRpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort);
+Node* createRpcNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager, INodeCallback& callback, const std::string& nodeHost, unsigned short nodePort, Logging::ILogger& logger);
 Node* createInprocessNode(const CryptoNote::Currency& currency, Logging::LoggerManager& logManager,
   const CryptoNote::CoreConfig& coreConfig, const CryptoNote::NetNodeConfig& netNodeConfig, INodeCallback& callback);
 
