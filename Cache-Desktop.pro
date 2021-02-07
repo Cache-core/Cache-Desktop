@@ -162,6 +162,7 @@ HEADERS += libqrencode/bitstream.h \
            cryptonote/src/Common/StringOutputStream.h \
            cryptonote/src/Common/StringTools.h \
            cryptonote/src/Common/StringView.h \
+           cryptonote/src/Common/Types.h \
            cryptonote/src/Common/Util.h \
            cryptonote/src/Common/Varint.h \
            cryptonote/src/Common/VectorOutputStream.h \
