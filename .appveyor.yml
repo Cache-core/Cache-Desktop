@@ -15,7 +15,7 @@ environment:
       PATH: '%PATH%;%QTDIR%\bin;%BOOST_ROOT%;%BOOST_LIBRARYDIR%'
 
 build_script:
-   - git clone https://github.com/cache-core/Cache.git cryptonote
+   - git clone https://github.com/cache-core/Cache.git -b development cryptonote
    - git clone https://github.com/fukuchi/libqrencode.git
    - md build && cd build
    - ps: 'Write-Host "Running $env:BUILDER with $env:GENERATOR" $env:PLATFORM -ForegroundColor Magenta'
